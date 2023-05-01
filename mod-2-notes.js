@@ -261,3 +261,243 @@ let y = (x > 5) ? ((x < 20) ? "Between 5 and 20" : "Greater than or equal to 20"
 console.log(y);
 
 
+
+Functions:
+Functions in JavaScript are blocks of code that can be defined and called later in the code. 
+They can take in parameters and return values. 
+Functions are an essential part of JavaScript programming as they allow for code reuse and help to make the code more organized.
+
+Invoking functions:
+To invoke a function in JavaScript, you simply call it by its name followed by parentheses containing any arguments it requires. 
+
+For example:
+
+function add(a, b) {
+  return a + b;
+}
+
+let result = add(2, 3);
+console.log(result); // Output: 5
+
+
+
+
+Defining functions:
+To define a function in JavaScript, you use the function keyword followed by the function name, any parameters it takes, and the function body. 
+
+For example:
+
+function greet(name) {
+  console.log(`Hello, ${name}!`);
+}
+
+greet('John'); // Output: Hello, John!
+
+
+
+
+Anonymous functions:
+Anonymous functions are functions that do not have a name. 
+They are often used as callback functions or as IIFE's (Immediately Invoked Function Expressions). 
+
+For example:
+
+let add = function(a, b) {
+  return a + b;
+}
+
+let result = add(2, 3);
+console.log(result); // Output: 5
+
+
+
+
+
+Arrow functions:
+Arrow functions are a shorthand way of defining functions in JavaScript. 
+They use the => syntax and are often used for simple functions or as callbacks. 
+
+For example:
+
+let add = (a, b) => a + b;
+
+let result = add(2, 3);
+console.log(result); // Output: 5
+
+
+
+
+
+Scope:
+Scope refers to the visibility of variables within a program. 
+JavaScript has two types of scope: global scope and local scope. 
+Global scope variables can be accessed from anywhere in the program, 
+while local scope variables are only accessible within the function they were defined in.
+
+
+
+
+
+Return values:
+Functions can return values using the return keyword. 
+The value that is returned can be used in other parts of the program. 
+
+For example:
+
+function add(a, b) {
+  return a + b;
+}
+
+let result = add(2, 3);
+console.log(result); // Output: 5
+
+
+
+
+Default values:
+Default values allow you to provide a default value for a function 
+parameter in case one is not provided when the function is called. 
+
+For example:
+
+function greet(name = 'World') {
+  console.log(`Hello, ${name}!`);
+}
+
+greet(); // Output: Hello, World!
+greet('John'); // Output: Hello, John!
+
+
+
+
+
+
+Call Stack:
+The call stack is a data structure used by JavaScript to keep track of the order in which functions are called. 
+When a function is called, it is added to the top of the call stack, and when it returns, it is removed from the stack.
+
+
+
+
+Problem Solving:
+
+Effective problem solving in Java requires a strong understanding of Java programming concepts, 
+data structures, algorithms, and best practices. It also involves the ability to think logically, 
+analyze problems, and develop efficient and effective solutions.
+
+These steps include:
+
+1. Define the problem: Identify the problem to be solved and define it clearly.
+
+2. Analyze the problem: Break down the problem into smaller, more manageable parts and determine the requirements and constraints.
+
+3. Design a solution: Develop an algorithmic solution to the problem using Java programming constructs.
+
+4. Implement the solution: Write the Java code to implement the algorithmic solution.
+
+5. Test the solution: Test the Java code to ensure that it solves the problem correctly and meets the requirements.
+
+6. Refine the solution: Refine the Java code as necessary to improve its performance or meet additional requirements.
+
+7. Document the solution: Document the Java code and the problem-solving process to make it easier to understand and maintain.
+
+When I had Professor Hanson for my first few programming classes he said most of the time coders aren't coding. They'll be given a problem,
+and have to figure out how best to approach the problem given to them. He prefered charts, lots of charts.
+
+
+
+
+JavaScript errors:
+
+Understanding errors is an essential part of programming in any language, including JavaScript. 
+Errors in JavaScript are issues that occur when the code is executed, and they prevent the program from working correctly. 
+Therefore, it is essential to understand and address errors in JavaScript code to ensure the code runs smoothly.
+
+The different types of JavaScript Errors are:
+
+Syntax Errors: 
+Syntax errors occur when the code is not written correctly, i.e., when there is an issue with the syntax of the code. 
+This type of error is often caused by a missing or misplaced character or a typo in the code.
+
+Example of a syntax error:
+
+public class SyntaxErrorExample {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println("The value of x is: " + x);
+    // Syntax error: missing semicolon
+    int y = x * 2
+    System.out.println("The value of y is: " + y);
+  }
+}
+
+
+
+Runtime Errors: 
+Runtime errors occur when the code is executing, and the program encounters an issue. 
+This can be caused by a variety of issues such as division by zero, null references, or out-of-range array indices.
+
+
+public class Main {
+  public static void main(String[] args) {
+      int x = 10;
+      int y = 0;
+      int z = x / y;  // division by zero
+      System.out.println("Result: " + z);
+  }
+}
+
+// the value of y is 0, which is not a valid divisor
+//When the program executes this line of code, it will throw a runtime error called ArithmeticException
+
+
+
+Logic Errors: 
+Logic errors occur when the code runs without error, but it does not produce the expected results. 
+This can happen when there is an issue with the algorithm or the logic used in the code.
+
+
+public class Main {
+  public static void main(String[] args) {
+      int x = 10;
+      int y = 5;
+      int z = x + y * 2;  // should be x + y + 2
+      System.out.println("Result: " + z);
+  }
+}
+
+
+
+
+Type Errors: 
+Type errors occur when the program tries to use a value of the wrong data type. 
+This can happen when there is a mismatch between the expected and actual data types of a value.
+
+
+public class Main {
+  public static void main(String[] args) {
+      int x = 10;
+      String s = "Hello";
+      int z = x + s;  // Type error: cannot add string and int
+      System.out.println("Result: " + z);
+  }
+}
+
+
+
+
+
+Reference Errors: Reference errors occur when the program tries to access a variable or object that does not exist or is out of scope.
+Range Errors: Range errors occur when the program tries to use a value that is out of range, such as an array index that is too high or too low.
+
+public class Main {
+  public static void main(String[] args) {
+      int[] arr = {1, 2, 3};
+      int x = arr[3];  // Reference error: index out of bounds
+      System.out.println("Result: " + x);
+  }
+}
+
+
+
+
